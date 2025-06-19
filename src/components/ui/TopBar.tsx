@@ -9,13 +9,13 @@ const TopBar = () => {
                 <div className="hidden md:flex items-center justify-between">
                     {/* Social Icons - Left */}
                     <div className="flex items-center space-x-4">
-                        <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                        <a href="https://www.facebook.com/kraftechnologies" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
                             <FaFacebookF className="hover:text-gray-600 text-base" />
                         </a>
-                        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                        <a href="https://www.instagram.com/kraftechnologies/?igsh=MTZ2NncwM2xjOGU1NA%3D%3D#" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
                             <FaInstagram className="hover:text-gray-600 text-base" />
                         </a>
-                        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                        <a href="https://www.linkedin.com/company/kraftechnologies/posts/?feedView=all" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
                             <FaLinkedinIn className="hover:text-gray-600 text-base" />
                         </a>
                     </div>
@@ -33,10 +33,10 @@ const TopBar = () => {
                         <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
                             <FaFacebookF className="text-base" />
                         </a>
-                        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                        <a href="https://www.instagram.com/kraftechnologies?igsh=MTZ2NncwM2xjOGU1NA==" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
                             <FaInstagram className="text-base" />
                         </a>
-                        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                        <a href="https://www.linkedin.com/company/kraftechnologies/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
                             <FaLinkedinIn className="text-base" />
                         </a>
                     </div>
