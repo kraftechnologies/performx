@@ -87,7 +87,7 @@ export const RecurringFooter = () => {
           <a href="https://www.linkedin.com/company/kraftechnologies/posts/?feedView=all"><i className="fab fa-linkedin text-xl hover:text-purple-600"></i></a>
           <a href="https://www.instagram.com/kraftechnologies/?igsh=MTZ2NncwM2xjOGU1NA%3D%3D#"><i className="fab fa-instagram text-xl hover:text-purple-600"></i></a>
           <a href="https://x.com/kraftechnologies"><i className="fab fa-twitter text-xl hover:text-purple-600"></i></a>
-          <a href="https://www.facebook.com/kraftechnologies "><i className="fab fa-facebook text-xl hover:text-purple-600"></i></a>
+          <a href="https://www.facebook.com/kraftechnologies "><i className="fab fa-facebook text-xl hover:text-purple-600 "></i></a>
         </div>
       </div>
     </footer>
