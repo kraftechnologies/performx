@@ -20,7 +20,7 @@ const footerLinks = [
 
 export const RecurringFooter = () => {
   return (
-    <footer className="px-4 sm:px-8 lg:px-32 text-white">
+    <footer id="footer" className="px-4 sm:px-8 lg:px-32 text-white">
       <motion.div className="mt-32 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
         <div className="space-y-6">
           <div className="flex items-center">
