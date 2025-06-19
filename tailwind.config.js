@@ -7,12 +7,12 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        "app-accent": "var(--app-accent)",
-        "app-primary": "var(--app-primary)",
-        "app-secondary": "var(--app-secondary)",
-        "dark-accent": "var(--dark-accent)",
-        "dark-primary": "var(--dark-primary)",
-        border: "hsl(var(--border))",
+        "app-accent": "var(--app-accent, #D946EF)",     // fallback: pink
+        "app-primary": "var(--app-primary, #A855F7)",   // fallback: violet
+        "app-secondary": "var(--app-secondary, #FCD34D)",
+        "dark-accent": "var(--dark-accent, #6B7280)",
+        "dark-primary": "var(--dark-primary, #111827)",
+        border: "hsl(var(--border, 0, 0%, 90%))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
         background: "hsl(var(--background))",

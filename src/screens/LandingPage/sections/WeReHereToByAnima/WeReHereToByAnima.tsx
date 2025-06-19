@@ -11,7 +11,7 @@ export const WeReHereToByAnima = (): JSX.Element => {
 
   return (
     <section
-      className="relative h-full w-full py-20 text-white font-jost flex items-center justify-center bg-no-repeat bg-cover bg-center"
+      className="relative min-h-screen h-full w-full py-20 text-white font-jost flex items-center justify-center bg-[#0D0620] bg-no-repeat bg-cover bg-center"
       style={{
         backgroundImage: "url('/magicpattern-grid-pattern-1745224895225 1.jpg')",
       }}

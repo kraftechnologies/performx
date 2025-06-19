@@ -24,56 +24,21 @@
     content="Manage your workforce efficiently with PerformX, the ultimate HR solution by Kraf Technologies." />
   <meta name="twitter:image" content="/assets/perform.png" />
   <!-- Favicon -->
-  <link rel="icon" type="image/png" href="/favicon.png" />
+  <link rel="icon" type="image/png" href="/public//favicon.png" />
+
+  <link rel="preload" as="image" href="/magicpattern-grid-pattern-1745224895225 1.jpg" />
+
   <!-- Google Fonts: Jost -->
   <link rel="stylesheet"
     href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap" />
   <link rel="stylesheet" href="/tailwind.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
 </head>
 
 <body>
-  <div id="app">
-    <!-- Shimmer Loader -->
-    <div class="shimmer-loader"></div>
-  </div>
-
+  <div id="app"></div>
   <script type="module" src="/src/index.tsx"></script>
-
-  <style>
-    html,
-    body {
-      margin: 0;
-      padding: 0;
-      height: 100%;
-      background-color: #0D0620;
-      font-family: 'Jost', sans-serif;
-    }
-
-    .shimmer-loader {
-      width: 80%;
-      max-width: 600px;
-      height: 20px;
-      margin: 35vh auto;
-      border-radius: 8px;
-      background: linear-gradient(90deg,
-          rgba(255, 255, 255, 0.05) 25%,
-          rgba(255, 255, 255, 0.15) 50%,
-          rgba(255, 255, 255, 0.05) 75%);
-      background-size: 200% 100%;
-      animation: shimmer 1.4s infinite;
-    }
-
-    @keyframes shimmer {
-      0% {
-        background-position: -200% 0;
-      }
-
-      100% {
-        background-position: 200% 0;
-      }
-    }
-  </style>
 </body>
 
 </html>

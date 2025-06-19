@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import TopBar from "../../components/ui/TopBar";
 import { NavbarByAnima } from "../LandingPage/sections/NavbarByAnima";
 import { RecurringFooter } from "../LandingPage/sections/FooterByAnima/RecurringFooter";
+import ScrollToTop from "../../components/ui/ScrollToTop";
 
 interface FeaturePageProps {
     title: string;
@@ -36,6 +37,7 @@ const FeaturePage = ({
 
     return (
         <div className="bg-[#0D0620] text-white min-h-screen relative">
+            <ScrollToTop />
             <TopBar />
             <NavbarByAnima />
 
@@ -70,8 +72,8 @@ const FeaturePage = ({
                     <button
                         onClick={() => navigate(navigateTo.collaboration)}
                         className={`px-6 py-2 rounded-lg ${activeTab === "collaboration"
-                                ? "bg-[#8E24AA] text-white font-medium"
-                                : "bg-white/10 text-white/80 hover:bg-white/20"
+                            ? "bg-[#8E24AA] text-white font-medium"
+                            : "bg-white/10 text-white/80 hover:bg-white/20"
                             }`}
                     >
                         Collaboration Team
@@ -79,8 +81,8 @@ const FeaturePage = ({
                     <button
                         onClick={() => navigate(navigateTo.cloud)}
                         className={`px-6 py-2 rounded-lg ${activeTab === "cloud"
-                                ? "bg-[#8E24AA] text-white font-medium"
-                                : "bg-white/10 text-white/80 hover:bg-white/20"
+                            ? "bg-[#8E24AA] text-white font-medium"
+                            : "bg-white/10 text-white/80 hover:bg-white/20"
                             }`}
                     >
                         Cloud Storage
@@ -88,8 +90,8 @@ const FeaturePage = ({
                     <button
                         onClick={() => navigate(navigateTo.employee)}
                         className={`px-6 py-2 rounded-lg ${activeTab === "employee"
-                                ? "bg-[#8E24AA] text-white font-medium"
-                                : "bg-white/10 text-white/80 hover:bg-white/20"
+                            ? "bg-[#8E24AA] text-white font-medium"
+                            : "bg-white/10 text-white/80 hover:bg-white/20"
                             }`}
                     >
                         Employee Management
