@@ -72,8 +72,8 @@ const FeaturePage = ({
                     <button
                         onClick={() => navigate(navigateTo.collaboration)}
                         className={`px-6 py-2 rounded-lg ${activeTab === "collaboration"
-                            ? "bg-[#8E24AA] text-white font-medium"
-                            : "bg-white/10 text-white/80 hover:bg-white/20"
+                                ? "bg-[#8E24AA] text-white font-medium"
+                                : "bg-white/10 text-white/80 hover:bg-white/20"
                             }`}
                     >
                         Collaboration Team
@@ -81,8 +81,8 @@ const FeaturePage = ({
                     <button
                         onClick={() => navigate(navigateTo.cloud)}
                         className={`px-6 py-2 rounded-lg ${activeTab === "cloud"
-                            ? "bg-[#8E24AA] text-white font-medium"
-                            : "bg-white/10 text-white/80 hover:bg-white/20"
+                                ? "bg-[#8E24AA] text-white font-medium"
+                                : "bg-white/10 text-white/80 hover:bg-white/20"
                             }`}
                     >
                         Cloud Storage
@@ -90,8 +90,8 @@ const FeaturePage = ({
                     <button
                         onClick={() => navigate(navigateTo.employee)}
                         className={`px-6 py-2 rounded-lg ${activeTab === "employee"
-                            ? "bg-[#8E24AA] text-white font-medium"
-                            : "bg-white/10 text-white/80 hover:bg-white/20"
+                                ? "bg-[#8E24AA] text-white font-medium"
+                                : "bg-white/10 text-white/80 hover:bg-white/20"
                             }`}
                     >
                         Employee Management
@@ -100,7 +100,7 @@ const FeaturePage = ({
 
                 {/* Image with reveal animation */}
                 <motion.div
-                    className="w-full h-[500px] overflow-hidden mb-10 rounded-2xl"
+                    className="w-full mb-10 rounded-2xl overflow-hidden"
                     variants={fadeUpVariant}
                     initial="hidden"
                     animate="visible"
@@ -109,7 +109,7 @@ const FeaturePage = ({
                     <img
                         src={imageSrc}
                         alt={imageAlt}
-                        className="w-full h-full object-cover"
+                        className="w-full h-auto max-h-[500px] md:h-[500px] object-contain mx-auto"
                     />
                 </motion.div>
 

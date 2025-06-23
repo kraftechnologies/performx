@@ -68,7 +68,7 @@ export const ConsultationSection = () => {
     ];
 
     return (
-        <section className="w-full text-white py-6 px-4 sm:px-8 lg:px-32 overflow-hidden">
+        <section className="w-full text-white py-6 px-4 sm:px-8  overflow-hidden">
             <motion.h2
                 className="text-4xl font-bold text-center mb-16"
                 initial={{ opacity: 0, y: 30 }}

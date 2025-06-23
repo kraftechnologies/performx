@@ -109,7 +109,7 @@ export const NavbarByAnima = (): JSX.Element => {
             {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
 
-          {/* Mobile Sidebar (Full Width from Top) */}
+          {/* Mobile Sidebar */}
           <AnimatePresence>
             {isMenuOpen && (
               <motion.div
@@ -134,13 +134,13 @@ export const NavbarByAnima = (): JSX.Element => {
                         {link.dropdown && <ChevronDown size={16} />}
                       </button>
                       {link.dropdown && activeDropdown === link.title && (
-                        <div className="pl-4 mt-1 space-y-1">
+                        <div className="pl-4 mt-2 space-y-2 text-sm font-normal text-gray-300 leading-relaxed">
                           {link.dropdown.map((item) => (
                             <a
                               key={item}
                               href="#"
                               onClick={() => setIsMenuOpen(false)}
-                              className="block text-sm text-gray-300 hover:text-white"
+                              className="block hover:text-white transition-colors duration-200"
                             >
                               {item}
                             </a>
@@ -169,7 +169,14 @@ export const NavbarByAnima = (): JSX.Element => {
                   }
                   className="text-white font-medium hover:text-purple-300 text-sm flex items-center gap-1"
                 >
-                  {link.title} {link.dropdown && <ChevronDown size={16} />}
+                  {link.title}
+                  {link.dropdown && (
+                    <ChevronDown
+                      size={16}
+                      className={`transform transition-transform duration-200 ${activeDropdown === link.title ? "rotate-180" : ""
+                        }`}
+                    />
+                  )}
                 </button>
 
                 {link.dropdown && activeDropdown === link.title && (
@@ -178,7 +185,7 @@ export const NavbarByAnima = (): JSX.Element => {
                     animate="visible"
                     exit="hidden"
                     variants={dropdownVariants}
-                    className="absolute top-full mt-2 w-64 bg-[#1e295f] text-white rounded-md shadow-lg border border-purple-600/30 z-50 py-2"
+                    className="absolute top-full mt-2 w-64 bg-[#1e295f] text-white rounded-lg shadow-xl border border-purple-600/30 z-50 py-2"
                   >
                     {link.dropdown.map((item, i) => (
                       <motion.a
@@ -187,7 +194,7 @@ export const NavbarByAnima = (): JSX.Element => {
                         initial={{ opacity: 0, y: -5 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ delay: i * 0.05 }}
-                        className="block px-4 py-2 hover:bg-purple-700/60 hover:pl-5 transition-all duration-200 first:rounded-t-md last:rounded-b-md"
+                        className="block px-5 py-2 text-sm text-gray-200 hover:bg-purple-700/50 hover:pl-6 transition-all duration-200 ease-in-out first:rounded-t-lg last:rounded-b-lg"
                       >
                         {item}
                       </motion.a>
@@ -196,6 +203,7 @@ export const NavbarByAnima = (): JSX.Element => {
                 )}
               </div>
             ))}
+
             <div className="flex items-center space-x-4">
               <Button
                 variant="ghost"
