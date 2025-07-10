@@ -3,9 +3,12 @@
 @tailwind utilities;
 
 :root {
-  --app-accent: rgba(250, 145, 71, 1); /* Lighter #fa9147 */
-  --app-primary: rgba(248, 116, 24, 1); /* Base #f87418 */
-  --app-secondary: rgba(213, 96, 20, 1); /* Darker #d56014 */
+  --app-accent: rgba(250, 145, 71, 1);
+  /* Lighter #fa9147 */
+  --app-primary: rgba(248, 116, 24, 1);
+  /* Base #f87418 */
+  --app-secondary: rgba(213, 96, 20, 1);
+  /* Darker #d56014 */
   --dark-accent: rgba(30, 31, 37, 1);
   --dark-primary: rgba(19, 21, 23, 1);
 }
@@ -14,11 +17,11 @@
   .perspective {
     perspective: 2000px;
   }
-  
+
   .transform-3d {
     transform-style: preserve-3d;
   }
-  
+
   .rotate-x-12 {
     transform: rotateX(12deg);
   }
@@ -37,8 +40,15 @@
 
 /* Custom animations */
 @keyframes float {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-10px); }
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
 }
 
 .animate-float {
@@ -52,7 +62,15 @@
 }
 
 @keyframes gradient {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
 }

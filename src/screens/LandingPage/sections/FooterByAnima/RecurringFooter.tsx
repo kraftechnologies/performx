@@ -28,12 +28,7 @@ export const RecurringFooter = () => {
       <motion.div className="mt-32 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
         <div className="space-y-6">
           <div className="flex items-center">
-            <img className="w-12 h-12 mr-2" src="/rr-1-2.png" alt="Logo" />
-            <h3 className="text-2xl font-bold flex items-center">
-              <span className="text-white">recu</span>
-              <span className="text-red-500">rr</span>
-              <span className="text-white">ing</span>
-            </h3>
+            <img className="w-60 mr-2" src="/kraf.png" alt="Logo" />
           </div>
           <p className="text-white/70 text-sm">Get started now try our product</p>
           <div className="relative">
@@ -42,7 +37,7 @@ export const RecurringFooter = () => {
               placeholder="Enter your email"
               className="w-full pr-10 bg-[#1F1F25] border border-[#3B3B44] rounded-md text-white placeholder:text-gray-400 outline-none py-2 pl-4"
             />
-            <div className="absolute inset-y-0 right-0 flex items-center pr-1">
+            <div className="absolute inset-y-0 right-0 flex items-center ">
               <Button className="bg-[#8E24AA] hover:bg-purple-700 rounded-md" size="icon">
                 <ArrowRightIcon className="h-5 w-5 text-white" />
               </Button>

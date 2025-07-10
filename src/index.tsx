@@ -26,3 +26,11 @@ createRoot(document.getElementById("app") as HTMLElement).render(
     <RouterProvider router={router} />
   </StrictMode>
 );
+
+// ✅ Hide the loader after app is rendered
+window.addEventListener("DOMContentLoaded", () => {
+  const preloader = document.querySelector(".loader-overlay");
+  if (preloader) {
+    preloader.style.display = "none";
+  }
+});

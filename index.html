@@ -37,6 +37,58 @@
 </head>
 
 <body>
+  <div class="loader-overlay">
+    <div class="loader-box"></div>
+    <img src="kraf.png" alt="Logo" class="loader-logo" />
+  </div>
+
+  <style>
+    /* Full screen overlay */
+    .loader-overlay {
+      position: fixed;
+      inset: 0;
+      z-index: 9999;
+      background-color: black;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    /* Loader box with green top border */
+    .loader-box {
+      position: relative;
+      width: 90px;
+      height: 50px;
+      background-color: black;
+      border: 2px solid #2d2d2d;
+      border-top: 3px solid #18cb96;
+      border-radius: 9999px;
+      /* equivalent to Tailwind's rounded-3xl */
+      animation: spin-slow 3s linear infinite;
+      z-index: 5;
+    }
+
+    /* Logo centered absolutely */
+    .loader-logo {
+      position: absolute;
+      width: 36px;
+      /* Tailwind's w-9 = 2.25rem = 36px */
+      height: 36px;
+      object-fit: contain;
+      z-index: 10;
+    }
+
+    /* Custom slow spin animation */
+    @keyframes spin-slow {
+      0% {
+        transform: rotate(0deg);
+      }
+
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+  </style>
   <div id="app"></div>
   <script type="module" src="/src/index.tsx"></script>
 </body>

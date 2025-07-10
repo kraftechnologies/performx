@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
-
+import { Button } from "../../../../components/ui/button";
 // Animation for fade-up
 const fadeUp = {
   hidden: { opacity: 0, y: 30 },
@@ -20,6 +20,16 @@ const listItemFade = {
     transition: { delay: i * 0.1, duration: 0.4 },
   }),
 };
+
+// 🔁 Reusable Contact Button
+const ContactButton = () => (
+  <Button
+    className="bg-gradient-to-r from-purple-600 to-purple-800 hover:from-purple-700 hover:to-purple-900 px-6 py-2 text-white text-sm"
+    aria-label="Contact sales"
+  >
+    Contact to Seller
+  </Button>
+);
 
 export const ChoosePlanThatsByAnima = (): JSX.Element => {
   const [isAnnual, setIsAnnual] = useState(false);
@@ -65,8 +75,8 @@ export const ChoosePlanThatsByAnima = (): JSX.Element => {
           <button
             onClick={() => setIsAnnual(false)}
             className={`px-9 py-3 rounded-full text-sm font-semibold shadow-sm transition ${!isAnnual
-                ? "bg-[#8E24AA] text-white"
-                : "text-white hover:bg-white/10"
+              ? "bg-[#8E24AA] text-white"
+              : "text-white hover:bg-white/10"
               }`}
           >
             Monthly
@@ -74,8 +84,8 @@ export const ChoosePlanThatsByAnima = (): JSX.Element => {
           <button
             onClick={() => setIsAnnual(true)}
             className={`px-9 py-3 rounded-full text-sm font-semibold shadow-sm transition ${isAnnual
-                ? "bg-[#8E24AA] text-white"
-                : "text-white hover:bg-white/10"
+              ? "bg-[#8E24AA] text-white"
+              : "text-white hover:bg-white/10"
               }`}
           >
             Annually
@@ -121,6 +131,7 @@ export const ChoosePlanThatsByAnima = (): JSX.Element => {
                     </motion.li>
                   ))}
                 </ul>
+                <ContactButton />
               </motion.div>
 
               {/* Empty Middle Box */}
@@ -130,6 +141,8 @@ export const ChoosePlanThatsByAnima = (): JSX.Element => {
                 initial="hidden"
                 whileInView="visible"
                 viewport={{ once: false, amount: 0.3 }}
+                whileHover={{ y: -10, scale: 1.02 }}
+                transition={{ type: "spring", stiffness: 300 }}
               />
 
               {/* Business Plan */}
@@ -163,6 +176,7 @@ export const ChoosePlanThatsByAnima = (): JSX.Element => {
                     </motion.li>
                   ))}
                 </ul>
+                <ContactButton />
               </motion.div>
             </>
           )}
@@ -171,11 +185,13 @@ export const ChoosePlanThatsByAnima = (): JSX.Element => {
           {isAnnual && (
             <>
               <motion.div
-                className="border border-white/20 rounded-lg p-6 bg-[#1c1c2e] h-[300px]"
+                className="border border-white/20 rounded-lg  p-6 bg-[#1c1c2e] h-[300px]"
                 variants={fadeUp}
                 initial="hidden"
                 whileInView="visible"
                 viewport={{ once: false, amount: 0.3 }}
+                whileHover={{ y: -10, scale: 1.02 }}
+                transition={{ type: "spring", stiffness: 300 }}
               />
               <motion.div
                 className="border border-white/20 rounded-lg p-6 bg-[#1c1c2e] h-[300px]"
@@ -183,6 +199,8 @@ export const ChoosePlanThatsByAnima = (): JSX.Element => {
                 initial="hidden"
                 whileInView="visible"
                 viewport={{ once: false, amount: 0.3 }}
+                whileHover={{ y: -10, scale: 1.02 }}
+                transition={{ type: "spring", stiffness: 300 }}
               />
             </>
           )}

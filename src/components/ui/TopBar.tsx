@@ -20,8 +20,9 @@ const TopBar = () => {
                     </div>
 
                     {/* Email + Phone */}
-                    <div className="flex items-center space-x-4 md:space-x-6 text-right text-[10px] md:text-sm">
-                        <span>PerformX@kraftechnologies.com</span>
+                    <div className="flex items-center space-x-4 md:space-x-6 text-right text-sm md:text-sm">
+                        <span>sales@kraftechnologies.com</span>
+                        <span>|</span>
                         <span>+91 9670269295</span>
                     </div>
                 </div>

@@ -52,6 +52,8 @@ module.exports = {
         "fade-in": "fade-in 1s ease-out",
         "slide-in": "slide-in 0.5s ease-out",
         "marquee": 'marquee 20s linear infinite',
+        "loaderMask": "loaderMask 1.8s ease-in-out infinite",
+        "spin-slow": 'spin 4s linear infinite',
       },
       keyframes: {
         "accordion-down": {
@@ -74,7 +76,18 @@ module.exports = {
           '0%': { transform: 'translateX(0%)' },
           '100%': { transform: 'translateX(-50%)' },
         },
+        loaderMask: {
+          "0%": { transform: "translateX(-100%) rotate(12deg)" },
+          "100%": { transform: "translateX(100%) rotate(12deg)" },
+        },
       },
+    },
+    screens: {
+      sm: "640px",
+      md: "980px", // changed from 768px to 980px
+      lg: "1024px",
+      xl: "1280px",
+      "2xl": "1536px",
     },
     container: { center: true, padding: "2rem", screens: { "2xl": "1400px" } },
   },
